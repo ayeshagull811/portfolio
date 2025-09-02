@@ -1,10 +1,9 @@
 import React from "react";
-import tour from "../assest/tour.png";
-import jobportal from "../assest/jobportal.png";
-import task from "../assest/task.png";
-import book from "../assest/images1.png";
-import game from "../assest/images2.png";
-import figma from "../assest/images.png";
+import jobportal from "../assets/jobportal.png";
+import task from "../assets/task.png";
+import book from "../assets/image1.png";
+import game from "../assets/image2.png";
+
 
 export default function MyProject() {
   const projects = [

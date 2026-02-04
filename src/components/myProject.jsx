@@ -3,6 +3,7 @@ import jobportal from "../assets/jobportal.png";
 import task from "../assets/task.png";
 import book from "../assets/image1.png";
 import game from "../assets/image2.png";
+import salon from "../assets/salon.png";
 
 
 export default function MyProject() {
@@ -14,13 +15,14 @@ export default function MyProject() {
       demo: "https://book-stores-psi.vercel.app/",
       code: "https://github.com/ayeshagull811/Book-Stores",
     },
-    // {
-    //   name: "Figma",
-    //   img: figma,
-    //   des: "A creative design project showcasing clean layouts and user-friendly interface prototypes built in Figma.",
-    //   demo: "https://book-stores-psi.vercel.app/",
-    //   code: "https://github.com/ayeshagull811/figma",
-    // },
+ {
+  name: "Saas Salon management system",
+  img: salon,
+  des: "A SaaS-based Salon Management System designed to manage appointments, services, staff, and customers efficiently. Built with a modern UI and focused on smooth user experience for salon owners.",
+  demo: "https://saas-project-salon-management-syste-seven.vercel.app/",
+  code: "https://github.com/ayeshagull811/Saas-project-salon-management-system-",
+},
+
     {
       name: "Guess Number",
       img: game,

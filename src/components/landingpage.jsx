@@ -172,6 +172,7 @@ const TechPortfolioBackground = () => {
       new CircuitAnimation(canvasRef.current);
     }
 
+    // add spin animation for gears
     const style = document.createElement('style');
     style.textContent = `
       @keyframes spin {
@@ -182,6 +183,7 @@ const TechPortfolioBackground = () => {
     document.head.appendChild(style);
 
     return () => document.head.removeChild(style);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -203,18 +205,19 @@ const TechPortfolioBackground = () => {
 
           <p className="text-gray-300 max-w-2xl font-mono">
             A passionate Web Developer with a strong focus on creating
-          modern, responsive, and user-friendly websites. I specialize in React,
-          Tailwind CSS, and JavaScript, and enjoy turning ideas into clean,
-          functional code. My goal is to build digital experiences that are both
-          visually appealing and highly efficient. With hands-on experience in
-          frontend development and a growing knowledge of backend technologies,
-          I aim to deliver full-stack solutions that add real value. I’m
-          constantly learning, exploring new technologies, and improving my
-          skills to stay ahead in the ever evolving tech world. Beyond coding, I
-          enjoy problem-solving, designing intuitive interfaces, and working on
-          projects that challenge me to think creatively
+            modern, responsive, and user-friendly websites. I specialize in React,
+            Tailwind CSS, and JavaScript, and enjoy turning ideas into clean,
+            functional code. My goal is to build digital experiences that are both
+            visually appealing and highly efficient. With hands-on experience in
+            frontend development and a growing knowledge of backend technologies,
+            I aim to deliver full-stack solutions that add real value. I’m
+            constantly learning, exploring new technologies, and improving my
+            skills to stay ahead in the ever evolving tech world. Beyond coding, I
+            enjoy problem-solving, designing intuitive interfaces, and working on
+            projects that challenge me to think creatively
           </p>
-<ResumeButton/>
+
+          <ResumeButton />
           <AboutMe />
           <MySkills />
           <MyProject />

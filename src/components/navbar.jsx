@@ -7,9 +7,17 @@ export default function Navbar() {
   return (
     <nav  className="w-full bg-transparent shadow-md z-50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
- 
-        <h1 className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent drop-shadow-2xl leading-relaxed font-mono">Ayesha <span className="text-gray-300 max-w-xl text-xl leading-relaxed font-mono">Portfolio</span></h1>
+<div>
+  <h1 className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent drop-shadow-2xl leading-relaxed font-mono">
+    Ayesha
+  </h1>
+  <p className="text-gray-400 text-sm font-mono -mt-2 pl-5">
+    Web Developer
+  </p>
+</div>
 
+
+        
      
         <ul className="hidden md:flex space-x-8 text-white font-medium">
           <li><a href="#home" className="text-transparent drop-shadow-2xl leading-relaxed font-mono hover:text-blue-200 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text">Home</a></li>

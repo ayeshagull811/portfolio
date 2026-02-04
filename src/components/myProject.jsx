@@ -75,7 +75,7 @@ export default function MyProject() {
                   >
                     <span className="relative z-10">
                       {" "}
-                      <a href={project.demo} target="_blank">
+                      <a href={project.demo} target="_blank"  rel="noopener noreferrer">
                         Live Demo
                       </a>
                     </span>

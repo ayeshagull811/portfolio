@@ -203,7 +203,7 @@ const TechPortfolioBackground = () => {
             Hi, I’m Ayesha
           </h1>
 
-          <p className="text-gray-300 max-w-2xl font-mono">
+          <p className="text-gray-300 max-w-2xl font-mono text-justify">
             A passionate Web Developer with a strong focus on creating
             modern, responsive, and user-friendly websites. I specialize in React,
             Tailwind CSS, and JavaScript, and enjoy turning ideas into clean,

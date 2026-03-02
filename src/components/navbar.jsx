@@ -41,11 +41,13 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden  px-6 pb-4">
           <ul className="space-y-4 text-white font-medium">
-            <li><a href="#home" onClick={() => setIsOpen(false)}>Home</a></li>
-            <li><a href="#about" onClick={() => setIsOpen(false)}>About Me</a></li>
-            <li><a href="#skills" onClick={() => setIsOpen(false)}>Skills</a></li>
-            <li><a href="#projects" onClick={() => setIsOpen(false)}>Projects</a></li>
-            <li><a href="#contact" onClick={() => setIsOpen(false)}>Contact</a></li>
+            <li><a href="#home" onClick={() => setIsOpen(false)} className="hover:text-cyan-400 transition">Home</a></li>
+            <li><a href="#about" onClick={() => setIsOpen(false)} className="hover:text-cyan-400 transition">About Me</a></li>
+            <li><a href="#skills" onClick={() => setIsOpen(false)} className="hover:text-cyan-400 transition">Skills</a></li>
+            <li><a href="#projects" onClick={() => setIsOpen(false)} className="hover:text-cyan-400 transition">Projects</a></li>
+            <li><a href="#experience" onClick={() => setIsOpen(false)} className="hover:text-cyan-400 transition">Experience</a></li>
+            <li><a href="#qualification" onClick={() => setIsOpen(false)} className="hover:text-cyan-400 transition">Qualification</a></li>
+            <li><a href="#contact" onClick={() => setIsOpen(false)} className="hover:text-cyan-400 transition">Contact</a></li>
           </ul>
         </div>
       )}

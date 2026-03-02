@@ -27,11 +27,11 @@ export default function MySkills() {
 
   return (
     <div id="skills">
-      <h1 className="text-3xl mt-25 md:text-5xl font-bold mb-5 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent drop-shadow-2xl">
+      <h1 className="text-3xl mt-6 md:text-5xl font-bold mb-5 text-center bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent drop-shadow-2xl">
         My <span className="text-gray-300">Skills</span>
       </h1>
 
-      <div className="grid md:grid-cols-5 lg:grid-cols-4 mb-10 gap-3">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mb-10 gap-3">
         {skills.map((skill) => (
           <div
             key={skill.name}

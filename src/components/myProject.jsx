@@ -59,8 +59,8 @@ export default function MyProject() {
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project) => (
-              <div className=" p-6 rounded-2xl drop-shadow-2xl bg-cyan-400/5 backdrop-blur-lg border-2 border-cyan-400/30 hover:scale-105 transition">
+            {projects.map((project, index) => (
+              <div key={index} className="p-6 rounded-2xl drop-shadow-2xl bg-cyan-400/5 backdrop-blur-lg border-2 border-cyan-400/30 hover:scale-105 transition">
                 <img
                   src={project.img}
                   alt="Project Thumbnail"

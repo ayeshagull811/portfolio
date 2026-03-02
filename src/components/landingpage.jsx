@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import profileImg from '../assets/profile.jpeg';
 
 import AboutMe from './aboutme';
 import MySkills from './skills';
@@ -194,30 +195,51 @@ const TechPortfolioBackground = () => {
         <Gear size={80} x={15} y={20} speed={10} />
         <Gear size={120} x={8} y={60} speed={15} />
         <Gear size={60} x={25} y={75} speed={8} />
+        <Gear size={45} x={30} y={85} speed={20} />
+        <Gear size={70} x={45} y={90} speed={25} />
 
         <CircuitLines />
         <HUDElements />
 
-        <div className="relative z-10 min-h-screen p-10 flex flex-col items-center justify-center text-center">
-          <h1 className="text-6xl font-bold mb-5 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-            Hi, I’m Ayesha
-          </h1>
+        <div className="relative z-10 min-h-screen p-10 flex flex-col items-center justify-center">
 
-          <p className="text-gray-300 max-w-2xl font-mono text-justify">
-            A passionate Web Developer with a strong focus on creating
-            modern, responsive, and user-friendly websites. I specialize in React,
-            Tailwind CSS, and JavaScript, and enjoy turning ideas into clean,
-            functional code. My goal is to build digital experiences that are both
-            visually appealing and highly efficient. With hands-on experience in
-            frontend development and a growing knowledge of backend technologies,
-            I aim to deliver full-stack solutions that add real value. I’m
-            constantly learning, exploring new technologies, and improving my
-            skills to stay ahead in the ever evolving tech world. Beyond coding, I
-            enjoy problem-solving, designing intuitive interfaces, and working on
-            projects that challenge me to think creatively
-          </p>
+          {/* Hero Row: Image Left | Text Right */}
+          <div className="flex flex-col md:flex-row items-center justify-center gap-28 w-full max-w-6xl mb-10">
 
-          <ResumeButton />
+            {/* Left - Profile Image */}
+            <div className="flex-shrink-0 self-start mt-4 relative">
+              <div className="absolute inset-0 rounded-full bg-cyan-400 opacity-20 blur-xl scale-110 animate-pulse"></div>
+              <div className="relative rounded-full p-1 bg-gradient-to-br from-cyan-400 to-blue-600">
+                <img
+                  src={profileImg}
+                  alt="Ayesha"
+                  className="w-44 h-44 md:w-52 md:h-52 rounded-full object-cover object-top"
+                />
+              </div>
+            </div>
+
+            {/* Right - Heading, Paragraph, Button */}
+            <div className="flex flex-col items-start text-left max-w-xl">
+              <h1 className="text-6xl font-bold mb-5 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+                Hi, I'm Ayesha
+              </h1>
+              <p className="text-gray-300 font-mono text-justify mb-6">
+                A passionate Web Developer with a strong focus on creating
+                modern, responsive, and user-friendly websites. I specialize in React,
+                Tailwind CSS, and JavaScript, and enjoy turning ideas into clean,
+                functional code. My goal is to build digital experiences that are both
+                visually appealing and highly efficient. With hands-on experience in
+                frontend development and a growing knowledge of backend technologies,
+                I aim to deliver full-stack solutions that add real value. I'm
+                constantly learning, exploring new technologies, and improving my
+                skills to stay ahead in the ever evolving tech world. Beyond coding, I
+                enjoy problem-solving, designing intuitive interfaces, and working on
+                projects that challenge me to think creatively
+              </p>
+              <ResumeButton />
+            </div>
+          </div>
+
           <AboutMe />
           <MySkills />
           <MyProject />
